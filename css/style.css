@@ -902,6 +902,7 @@ h4 {
   .header {
     position: relative;
     z-index: 1;
+    padding-top: 50px;
     padding-bottom: 126px;
     background-color: #666666;
     background-image: url("../images/banner-bg-tablet.jpg");
@@ -914,12 +915,13 @@ h4 {
     position: relative;
     z-index: 3;
     width: 158px;
-    padding: 50px 0 0 35px;
   }
 
   .menu {
     width: 100%;
     min-width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .desktop-menu {
@@ -932,8 +934,6 @@ h4 {
     flex-direction: column;
     flex-wrap: wrap;
     width: 23px;
-    margin-right: 35px;
-    margin-top: 53px;
     z-index: 3;
   }
 
@@ -1102,6 +1102,7 @@ h4 {
   }
 
   .header {
+    padding-top: 30px;
     padding-bottom: 218px;
     background-image: url("../images/banner-mobile.jpg");
     background-position: center center;
@@ -1110,6 +1111,8 @@ h4 {
   .menu {
     display: flex;
     flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .mobile-logo {
@@ -1125,8 +1128,6 @@ h4 {
   .mobile-menu {
     order: 1;
     align-self: self-end;
-    margin-right: 15px;
-    margin-top: 30px;
   }
 
   .header-text {
