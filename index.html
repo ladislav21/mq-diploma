@@ -9,42 +9,41 @@
 </head>
 
 <body>
-  <section class="popup__hidden"> 
-    <div class="popup-window">
-      <div class="popup-close">
-        <span class="hidden-element">Кнопка закрытия pop-up</span>
+  <div class="popup__hidden">
+    <section class="popup"> 
+      <div class="popup-window">
+        <button class="popup-close">
+          <span class="hidden-element">Кнопка закрытия pop-up</span>
+        </button>
+        <h2 class="popup-title">Ваш фидбек</h2>
+        <form class="popup-form">
+          <label for="frequency" class="popup-text">Как часто вы заходите на сайт?</label>
+          <div class="select-form">
+            <select id="frequency" class="selector">
+              <option selected>Почти каждый день</option>
+              <option>Раз в несколько дней</option>
+              <option>Раз в несколько недель</option>
+              <option>Несколько раз в год</option>
+            </select>
+          </div>
+          <span class="popup-text">Вы подписаны на e-mail рассылку?</span>
+          <fieldset id="group1" class="radio-group-form">
+            <div>
+              <input type="radio" id="agree" name="group1" class="hide-radio" checked>
+              <label for="agree" class="radio-button-icon">Да</label>
+            </div>
+            <div>
+              <input type="radio" id="disagree" name="group1" class="hide-radio">
+              <label for="disagree" class="radio-button-icon">Нет</label>
+            </div>
+          </fieldset>
+          <label for="textfield" class="popup-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+          <textarea id="textfield" class="textarea-form" placeholder="Может, больше рецептов?" required></textarea>
+          <button type="submit" class="submit-button">Отправить</button>
+        </form>
       </div>
-      <h2 class="popup-title">Ваш фидбек</h2>
-      <form class="popup-form">
-        <label for="frequency" class="popup-text">Как часто вы заходите на сайт?</label>
-        <div class="select-form">
-          <select id="frequency" class="selector">
-            <option selected>Почти каждый день</option>
-            <option>Раз в несколько дней</option>
-            <option>Раз в несколько недель</option>
-            <option>Несколько раз в год</option>
-          </select>
-          <div class="choose-icon">
-            <span class="hidden-element">Иконка выбора варианта</span>
-          </div>
-        </div>
-        <span class="popup-text">Вы подписаны на e-mail рассылку?</span>
-        <fieldset id="group1" class="radio-group-form">
-          <div>
-            <input type="radio" id="agree" name="group1" class="hide-radio" checked>
-            <label for="agree" class="radio-button-icon">Да</label>
-          </div>
-          <div>
-            <input type="radio" id="disagree" name="group1" class="hide-radio">
-            <label for="disagree" class="radio-button-icon">Нет</label>
-          </div>
-        </fieldset>
-        <label for="textfield" class="popup-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-        <textarea id="textfield" class="textarea-form" placeholder="Может, больше рецептов?" required></textarea>
-        <input type="submit" class="submit-button" value="Отправить">
-      </form>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <header class="header">
     <div class="menu">
